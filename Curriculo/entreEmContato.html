@@ -86,7 +86,7 @@ function validateForm() {
   const allowedExtensions = ['pdf', 'doc', 'docx', 'jpeg', 'jpg', 'png'];
   const fileName = fileInput.value.split('.').pop().toLowerCase();
   if (!allowedExtensions.includes(fileName)) {
-    alert('Tipo de arquivo não permitido.');
+    alert('Tipo de arquivo não suportado.');
     return false;
   }
   return true;
